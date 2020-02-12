@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:columnWidth="80dp"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="4dp">
+    </GridView>
+    <!-- GridView는 ListView,Spinner와 다르게 entries 속성이 존재하지 않기에 JAVA에서 대량의 데이터를 지정해야만 함  -->
+    <!-- numColumns : 한줄에 몇칸이 들어갈지 지정   -->
+    <!-- columnWidth : 한칸의 너비지정[단, 이 속성값은 numColumns="auto_fit"일때만 적용됨 -->
+
+</RelativeLayout>
